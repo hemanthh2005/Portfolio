@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hemanth — Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-row">
+            <div class="brand">
+                <a href="./">Hemanth's - Portfolio</a>
+            </div>
+            <nav class="nav">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="cta">Contact</a>
+                <a class="btn" href="resume.pdf" download>Resume</a>
+            </nav>
+            <button id="mobile-menu-btn" class="mobile-menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero container">
+            <div class="hero-left">
+                <h1>Hello — I'm <br><span class="accent">Hemanth Kumar</span></h1>
+                <p class="lead">Full Stack Devloper And Problem Solver</p>
+                <p class="education">4th sem CSE Student At Malnad College Of Engineering, Hassan</p>
+                <p class="hero-actions">
+                    <a class="primary" href="#projects">View projects</a>
+                    <a class="secondary" href="Resume.pdf" download>Download CV</a>
+                </p>
+                <ul class="social-inline">
+                    <li><a href="httpshemanthh2005://github.com/" aria-label="GitHub">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/hemanth-kumar-97801a2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="hero-right">
+                <div class="profile-card">
+                    <img src="profile1.jpg" alt="Your photo" class="profile-img" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="container section card">
+            <div class="section-header">
+                <h2>Selected Projects</h2>
+
+            </div>
+            <div id="projects-grid" class="projects-grid">Loading projects…</div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="container section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>DSA</div>
+                <div>MERN Stack</div>
+                <div>XML + XSLT</div>
+                <div>PHP &amp; MySQL (local)</div>
+                <div>Git &amp; GitHub</div>
+                <div>Python</div>
+                <div>Java</div>
+                <div>C</div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="container section card">
+            <h2>About</h2>
+            <p class="about-text">I am a passionate MERN stack developer and a dedicated DSA problem solver with strong
+                problem-solving
+                skills. I have solved 100+ LeetCode problems and enjoy applying logical thinking to real-world coding
+                challenges. I’ve built practical mini-projects including a weather app, calculator, and to-do list,
+                which helped me strengthen my understanding of JavaScript and modern development workflows. I work
+                confidently with Git and GitHub, and I constantly aim to write clean, scalable, and efficient code while
+                learning new technologies.</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="container section card">
+            <h2>Get In Touch</h2>
+            <p class="muted">Use this contact form — it sends to your email via Formspree (no PHP required).</p>
+
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                <div class="form-row">
+                    <input name="name" placeholder="Your name" required />
+                    <input name="email" type="email" placeholder="Email" required />
+                </div>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <div class="form-actions">
+                    <button type="submit" class="primary">Send message</button>
+                    <button type="reset" class="ghost">Reset</button>
+                </div>
+                <p id="form-status" class="muted"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; <span id="year"></span> Hemanth Kumar, All Rights Reserved</small>
+            <nav class="foot-links">
+                <a href="#">Privacy</a>
+                <a href="#">License</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Project detail modal -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close">✕</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
