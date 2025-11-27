@@ -4,7 +4,7 @@
     <title>Portfolio — Live</title>
     <desc>Responsive portfolio using GitHub Pages, XML+XSLT, and JS enhancements.</desc>
     <tech>HTML, CSS, JS, XSLT</tech>
-    <link>https://hemanthh2005.github.io/Web-Devlopment</link>
+    <link>https://hemanthh2005.github.io/Portfolio</link>
   </project>
   <project>
     <title>Weather App</title>
@@ -20,3 +20,4 @@
  <tech>HTML, CSS , JavaScript, React</tech>
   </project>
 </projects>
+
